@@ -4,6 +4,18 @@ console.log('こんにちは世界！');
 
 document.getElementById('choice').textContent = new date();
 
-var result = window.confirm('準備OK?');
+var number = Math.floor(Math.random()*3);
+var answer = parseInt(window.prompt('数あてゲーム0~2の数字を入力して下さい！！'));
 
-document.getElementById('choice2').textContent = result;
+var message;
+if(answer === number) {
+  message = '正解！';
+}else if (answer < number){
+  message = '残念。もっと大きいです';
+}else if (number < answer){
+  message = '残念。もっと小さいです';
+}else{
+  message = '0~2の数字を入力してください';
+}
+
+document.getElementById('choice2').textContent = message;
