@@ -13,11 +13,14 @@ while(true){
     message = '正解！';
       document.getElementById('choice').textContent = message;
     break;
-  }else if (answer < number){
+  }
+  else if (answer < number){
     message = '残念。もっと大きいです';
-  }else if (number < answer){
+  }
+  else if (number < answer){
     message = '残念。もっと小さいです';
-  }else{
+  }
+  else{
     message = '0~2の数字を入力してください';
   }
 
