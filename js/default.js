@@ -1,6 +1,5 @@
 window.alert('こんにちは世界！');
 
-document.getElementById('choice').textContent = new Date();
 
 var number = Math.floor(Math.random()*3);
 var answer = parseInt(window.prompt('数あてゲーム0~2の数字を入力して下さい！！'));
@@ -16,4 +15,4 @@ if(answer === number) {
   message = '0~2の数字を入力してください';
 }
 
-document.getElementById('choice2').textContent = message;
+document.getElementById('choice').textContent = message;
