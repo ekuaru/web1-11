@@ -1,6 +1,3 @@
-window.alert('こんにちは世界！');
-
-
 var number = Math.floor(Math.random()*3);
 var answer = parseInt(window.prompt('数あてゲーム0~2の数字を入力して下さい！！'));
 
