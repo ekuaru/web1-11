@@ -1,6 +1,8 @@
 var number = Math.floor(Math.random()*3);
 
-do{
+var loop = true;
+
+while(loop){
   
 
   var answer = parseInt(window.prompt('数あてゲーム0~2の数字を入力して下さい！！'));
@@ -11,6 +13,7 @@ do{
 
   if(answer === number) {
     message = '正解！';
+    loop = false;
   }
   else if (answer < number){
     message = '残念。もっと大きいです';
@@ -23,4 +26,4 @@ do{
   }
   document.getElementById('choice').textContent = message;
 
-}while(answer !== number);
+};
